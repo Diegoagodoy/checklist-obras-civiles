@@ -1,7 +1,5 @@
 # 📝 Checklist Dinámico para Obras Civiles
 
- 📝 Checklist Dinámico para Obras Civiles
-
 🌐 **Demo en vivo:** [https://diegoagodoy.github.io/checklist-obras-civiles/](https://diegoagodoy.github.io/checklist-obras-civiles/)
 
 
