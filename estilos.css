@@ -1,0 +1,731 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.2);
+    
+}
+
+.contenedor-general{
+    position: absolute;
+    border: 3px solid gray;
+    margin: 90px 20%;
+    width: 900px;
+    height: auto;
+    background: white;  
+    
+}
+
+
+.inicio-inicio .telecom{
+    position: fixed;
+    display: flex;
+    background-color:rgb(248, 248, 248);
+    border: 2px solid gray;
+    height: 48px;
+    width: 100%;
+    margin: auto 0px;
+    z-index: 5;
+}
+
+.telecom img{
+    margin: auto 5% auto 5%;
+}
+.inicio-inicio .espacio{
+    position: fixed;
+    background-color: #000;
+    height: 80px;
+    width: 100%;
+    top:48px;
+}
+
+
+
+.inicio-inicio .espacio a{
+    display: flex;
+    position: absolute;
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 24px;
+    color: white;
+    margin:-60px 150px;
+ 
+}
+
+.inicio-inicio .espacio img{
+    width: 80px;
+    margin: 15px 50px;
+}
+
+.inicio-inicio .telecom p{
+    color: #660cb1;
+    margin: auto 15px;
+    font-size: 20px;
+}
+
+.inicio-inicio .telecom a{
+    color: #660cb1;
+}
+
+.inicio-inicio .telecom a:hover{
+    color: #0bb3b3;
+}
+
+.contenedor-general .logo-obras img{
+    width: 170px;
+    margin: -100px 0 0 -75px;
+    position:fixed;
+    filter: drop-shadow(0px 1px 5px rgb(238, 241, 4));
+    animation: rotar 10s linear infinite ;
+    
+}
+
+
+
+@keyframes rotar{
+    0%,100%{
+        transform:rotate(3deg)
+    }
+    50%{
+        transform: rotate(-3deg)
+    }
+
+}
+
+
+
+.conteiner {
+    margin: 30px auto;
+}
+
+.fecha{
+    text-align: right;
+    margin-right: 60px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/*TITULO*/
+.conteiner .titulo{
+    margin: 10px auto;
+    width: 700px;
+    height: 54px;
+    border: 1px solid black;
+    background: rgba(173, 216, 230, 0.5);
+}
+
+.titulo h1{
+    margin: 8px auto;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+/*INICIO*/
+
+.conteiner.inicio{
+    align-items: center;
+    margin: 0 ;
+    padding: 8px;
+}
+
+/*TABLA DE DATOS PERSONALES*/
+.conteiner .inicio table {
+    margin: 20px auto 0 auto;
+    width: 700px;
+    height: auto; 
+    caption-side: bottom;  
+    border-collapse: collapse;
+}
+.conteiner .inicio table th{
+    background-color: rgba(128, 128, 128, 0.5);
+    width: 25px;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+.conteiner .inicio table .filaNombreObra, 
+.filaDireccion, .filaNombreSolicitante,
+.filaNombreReferente, .filaNombreReferente,
+.filaPEPImputacion, .filaFecha{
+    width: 178px;
+}
+.conteiner .inicio table tr{
+    border: 1px solid black;
+}
+
+.conteiner .inicio table .filaTelefonoReferente{
+    width: 60px;
+}
+
+
+.conteiner .inicio table input{
+    margin: 0 2px;
+    border: 0;   
+}
+
+
+
+.conteiner .inicio table .inpname{
+    margin: 0 2px;
+    width: 440px;
+    font-size: 14px;
+    
+}
+
+.conteiner .inicio table .inpemail{
+   
+    width: 250px;
+    text-align: right;
+    font-size: 14px;
+};
+
+.nombretd{
+    width: 165px;
+}
+
+.conteiner .inicio table textarea{
+    width:100%;
+    padding:3px;
+    font-size: 20px ;
+    padding: 5px 5px; 
+    margin: 5px auto;
+    resize:none;
+}
+
+.conteiner .inicio table i{
+  text-align: center;
+  margin: 0 2px; 
+}
+
+.formulario__input-error, .formulario__input-error1 {
+    color: green;
+	visibility: visible;
+}
+
+.formulario__input-error-activo {
+    color: red;
+	visibility: visible;
+}
+
+.conteiner .inicio table tr .filaLiberacion{
+    background-color: rgba(141, 104, 104, 0.5);
+    width: 120px;  
+}
+
+.conteiner .inicio table tr .filaLiberTel{
+    background-color: rgba(141, 104, 104, 0.5);
+    width: 25px;  
+}
+
+.conteiner .inicio table .inpnombres{
+    margin: 0 2px;
+    width: 160px;
+    font-size: 14px;
+    
+}
+
+.conteiner .inicio table .email{
+    height: 25px; 
+}
+
+.conteiner .inicio .inpnec{
+    width: 60px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.conteiner .inicio .espacio{
+    height: 6px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+/*TABLA DE SELECCION DE OBRA*/
+
+.conteiner .seleccion table{
+    margin: 10px auto;
+    width: 700px;
+    height: 192px; 
+    caption-side: bottom;  
+    border-collapse: collapse;
+    border:1px solid black;
+    
+    
+}
+.conteiner .seleccion table th{
+    
+    background-color: rgba(128, 128, 128, 0.5);
+   
+    height: 29px; 
+    border-right: none;
+    border-left: none;
+   
+}
+.conteiner .seleccion table td{
+    text-indent: 70px; 
+    
+    
+}
+
+.conteiner .seleccion table .selotro{
+    text-indent: 260px;
+}
+
+
+
+.seleccion table .formulario__input-error {
+    padding-left: 0;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-bottom:1px solid black;
+    text-align: right;
+    color: green;
+	visibility: visible;
+    
+}
+
+.seleccion table .formulario__input-error-activo {
+    padding-left: 0;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-bottom:1px solid black;
+    text-align: right;
+    color: red;
+	visibility: visible;
+}
+
+
+/*TABLA DINAMICA DE SELECION DE TAREAS*/
+
+.conteiner .sectdocument table {
+    margin: 10px auto;
+    width: 700px;
+    height: auto;
+    caption-side: bottom;  
+    border-collapse: collapse;
+}
+
+.conteiner .sectdocument table .titu {
+    background-color: rgba(173, 216, 230, 0.5);
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    width: 700px;
+    height: 50px;
+   
+}
+.conteiner .sectdocument table .tituloseleccion{
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.5);
+    
+}
+.conteiner .sectdocument table .titulotareas{
+    background-color: rgba(128, 128, 128, 0.2);
+    height: auto;
+    
+}
+.conteiner .sectdocument .tdarea{
+    padding: 5px; 
+   
+}
+.conteiner .sectdocument .tdotro{
+    text-align: left;
+}
+.conteiner .sectdocument td,th{
+    border: 1px solid black;
+    padding: 3px 3px; 
+    width:inherit;
+}
+
+.conteiner .sectdocument td{
+    border: 1px solid black;
+    padding: 3px 3px; 
+    width:inherit;
+}
+
+.conteiner .sectdocument .textotachado{
+    text-decoration:line-through;
+    
+}
+
+
+.conteiner .sectdocument .aplic{
+    width: 52px;
+    padding: 3px; 
+}
+
+
+.conteiner .sectdocument textarea{
+    width:100%;
+    margin:0 auto;
+    padding:3px;
+    resize: none;
+    font-size: 20px ;
+    
+
+}
+
+.sectdocument caption {
+    margin: 20px auto;
+    text-align: justify;
+   
+    
+}
+
+.conteiner .sectdocument table input{
+    margin-left: 15px;
+    margin-top: auto;
+   
+}
+
+.sectdocument .formulario__input-error {
+    position:absolute;
+    display: flex;
+    border: none;
+    margin: 1px 0 1px -23px;
+    text-align: right;
+    color: green;
+	visibility: visible;
+    
+}
+
+.sectdocument .formulario__input-error-activo {
+    color: red;
+	visibility: visible;
+}
+
+/*BOTON ENVIAR*/
+
+ button{
+    display: block;
+    margin: 50px auto;
+    padding: 8px;
+}
+
+/*OTROS*/
+
+.botonprueba{
+    display: block;
+    margin: 0 auto;
+    
+}
+.list {
+    display: block;
+}
+
+.formulario__mensaje {
+    margin: 0 auto;
+    width: 500px;
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+footer{
+    text-align: center;
+    font-size: 18px;
+    display: inherit;
+    margin-bottom: 15px;
+}
+
+footer a{
+    color:#660cb1;
+}
+
+footer a:hover{
+    color:hotpink;
+}
+
+/*BURBUJA DE COMENTARIOS POPUP*/
+
+.overlay {
+    position: relative;
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	justify-content: center;
+	display:flex;
+	visibility: hidden;
+}
+
+.overlay.active {
+	visibility: visible;
+  
+}
+
+.popup {
+    position: absolute;
+    display: block;
+	background: #F8F8F8;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	margin:55px 250px;
+    width: 750px;
+	transition: .7s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup .btn-cerrar-popup {
+    position: absolute;
+	font-size: 16px;
+	line-height: 16px;
+	display: flex;
+	right: 0;
+    top:-5px;
+	transition: .3s ease all;
+	color: #BBBBBB;
+    padding: 10px 10px 0 0;
+    z-index: 10;
+}
+
+.popup .btn-cerrar-popup:hover {
+	color: #000;
+}
+
+.popup h3 {
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+    margin-top: 10px;
+	opacity: 0;
+}
+
+.popup p {
+	font-size: 15px;
+	font-weight: 300;
+    margin: 0 15px;
+    padding-bottom: 25px;
+    text-align: left;
+	opacity: 0;
+}
+
+
+
+/* ------------------------- */
+/* ANIMACIONES */
+/* ------------------------- */
+.popup.active { transform: scale(1); opacity: 1;}
+.popup.active h3 { animation: entradaTitulo .7s ease .5s forwards; }
+.popup.active p { animation: entradaSubtitulo .7s ease .5s forwards; }
+
+
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaSubtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+/*POPUP*IMPRESION*/
+
+.over {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.over.active {
+	visibility: visible;
+  
+}
+
+.pop {
+    position: absolute;
+	background: #F8F8F8;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    margin: 10% 0;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+    height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.pop .btn {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.pop .btn:hover {
+	color: #000;
+}
+
+.pop h3 {
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	opacity: 0;
+}
+
+.pop h4 {
+	font-size: 18px;
+	font-weight: 300;
+	margin-bottom: 5px;
+	opacity: 0;
+}
+
+.pop .textError {
+	font-size: 18px;
+	font-weight: 300;
+	margin: 10px auto 30px auto;
+	opacity: 0;
+}
+
+.pop h5 {
+    font-size: 15px;
+	font-weight: 200;
+	margin: 15px auto 15px auto;
+    color: #c45ee3;
+	opacity: 0;
+}
+
+.pop .nomDoc {
+    margin-top: 0;
+    color: black;
+    font-weight:bold;
+    font-size: 15px;
+	margin-bottom: 20px;
+	opacity: 1;
+}
+
+.pop h6 {
+	font-size: 12px;
+	font-weight: 300;
+	margin-bottom: 0px;
+	opacity: 1;
+}
+
+.pop .gracias {
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	opacity: 1;
+}
+.pop svg {
+	width: 100px;
+    height: auto;
+}
+
+.pop .circError {
+	font-size: 30px;
+}
+
+.pop button {
+    margin: 0px auto 30px auto;
+	padding: 0 10px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5E7DE3;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.pop button:hover {
+	background: rgba(94,125,227, .9);
+}
+
+/* ------------------------- */
+/* ANIMACIONES */
+/* ------------------------- */
+.pop.active {	transform: scale(1); opacity: 1; }
+.pop.active h3 { animation: entrada .7s ease .5s forwards; }
+.pop.active h4 { animation: Subtitulo .7s ease .5s forwards; }
+.pop.active h5 { animation: requerimiento 1.5s ease .5s forwards; }
+
+
+
+@keyframes entrada {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes Subtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes requerimiento {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+
