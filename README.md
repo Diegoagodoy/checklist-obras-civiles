@@ -34,7 +34,7 @@ Al completar el formulario, se puede generar un **PDF**
 
 ```bash
 git clone https://github.com/Diegoagodoy/checklist-obras-civiles.git
-
+``` 
 2. Abrir index.html en cualquier navegador moderno (Chrome, Firefox, Edge)
 3. Completar el formulario dinámico
 4. Hacer clic en "Cargar Solicitud" para generar el PDF junto con el plano adjunto
